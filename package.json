@@ -21,5 +21,11 @@
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
         "vue": "^2.5.17"
+    },
+    "dependencies": {
+        "awesome": "0.0.7",
+        "buefy": "^0.8.2",
+        "bulma": "^0.7.5",
+        "font": "0.0.4"
     }
 }
