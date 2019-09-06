@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Auth;
 use App\Workout;
 use Illuminate\Http\Request;
 
@@ -12,9 +12,18 @@ class WorkoutController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct() 
+    {
+        if(Auth::check()) 
+        {
+            $this->userId = User::getID();
+        }
+    }
+    
     public function index()
     {
         //
+        return view('workout');
     }
 
     /**

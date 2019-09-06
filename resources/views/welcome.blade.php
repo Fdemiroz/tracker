@@ -85,8 +85,10 @@
                 </div>
 
                 <div class="links">
-                    <a href="/login">Login</a>
-                    <a href="/register">Register</a>
+                    @auth
+                        <a href="{{ url('/workout') }}">Workout</a>
+                    @else
+                    @endauth
                 </div>
             </div>
         </div>
