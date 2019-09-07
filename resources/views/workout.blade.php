@@ -1,5 +1,3 @@
-
-
 @extends('layouts.app')
 
 @section('content')
@@ -9,7 +7,8 @@
             <div class="card">
                 <div class="card-header">Workouts</div>
                 <div class="card-body">
-                    {{ucfirst(Auth::user()->name)}}
+                    {{ucfirst(Auth::user()->name)}}                
+                        <?php print_r($workout);?>
                 </div>
             </div>
         </div>

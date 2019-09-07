@@ -13,33 +13,36 @@ class Workout extends Model
     private $slug;
     private $userId;
 
-    public $exercise = [
-        'upper' => [
-            'shoulders' => [
-                'shoulder press', 'military press', 'front-raise', 'side-raise', 'reverse-peckdeck',
-                'shrug', 'face pull'
-            ],
-            'chest' => [
-                'bench press', 'fly', 'incline', 'peckdeck'
-            ],
-            'arms' => [
-                'bicep curl', 'hammer curl', 'concentration curl'
-            ],
-            'back' => ['row', 'deadlift', 'pullups'],
-        ],
-        'lower' => [
-            'legs' => [
-                ''
-            ],
-            'abs' => [
-                ''
-            ]
-        ],
-        'cardio' => ['bike']
-    ];
+    public $exercise;
     public $equipment = [
         'barbell', 'dumbell', 'free-weight', 'cable'
     ];
 
+    public function __construct() {
+        $this->exercise = [
+            'upper' => [
+                'shoulders' => [
+                    'shoulder press', 'military press', 'front-raise', 'side-raise', 'reverse-peckdeck',
+                    'shrug', 'face pull'
+                ],
+                'chest' => [
+                    'bench press', 'fly', 'incline', 'peckdeck'
+                ],
+                'arms' => [
+                    'bicep curl', 'hammer curl', 'concentration curl'
+                ],
+                'back' => ['row', 'deadlift', 'pullups'],
+            ],
+            'lower' => [
+                'legs' => [
+                    ''
+                ],
+                'abs' => [
+                    ''
+                ]
+            ],
+            'cardio' => ['bike']
+        ];
+    }
 
 }

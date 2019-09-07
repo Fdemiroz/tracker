@@ -23,7 +23,9 @@ class WorkoutController extends Controller
     public function index()
     {
         //
-        return view('workout');
+        $workout = new Workout();
+        $workout = $workout->exercise;
+        return view('workout',)->with('workout', $workout);
     }
 
     /**
