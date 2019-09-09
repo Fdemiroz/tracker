@@ -12,9 +12,15 @@
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
-                    @endif
 
-                    You are logged in!
+                    @endif
+                @if ($user->role > 0 )
+                    Welcome admin {{ucfirst($user->name)}}    
+                    {{User::all()}}                        
+                @else
+                    Welcome user {{ucfirst($user->name)}}
+                @endif
+                     You are logged in!
                 </div>
             </div>
         </div>
