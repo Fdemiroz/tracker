@@ -20,12 +20,14 @@
         "resolve-url-loader": "^2.3.1",
         "sass": "^1.15.2",
         "sass-loader": "^7.1.0",
-        "vue": "^2.5.17"
+        "vue": "^2.5.17",
+        "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
         "awesome": "0.0.7",
-        "buefy": "^0.8.2",
+        "buefy": "^0.8.3",
         "bulma": "^0.7.5",
-        "font": "0.0.4"
+        "font": "0.0.4",
+        "font-awesome": "^4.7.0"
     }
 }
